@@ -1,9 +1,20 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
 function SingUp() {
+
+  const navigate = useNavigate();
+
+  const singClick = () => navigate('/home');
+
   return (
     <div>
       <div className="container">
+
+        
+      <button onClick={singClick} className="salir">
+  Salir
+</button>
         <div className="card">
           <a className="singup">Sing Up</a>
           <div className="inputBox1">
@@ -39,6 +50,7 @@ function SingUp() {
           <button className="enter">Enter</button>
         </div>
       </div>
+
     </div>
   );
 }

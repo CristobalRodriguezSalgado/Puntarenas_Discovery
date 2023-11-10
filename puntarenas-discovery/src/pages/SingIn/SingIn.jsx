@@ -1,6 +1,8 @@
 import React from "react";
-
+import { useNavigate } from 'react-router-dom';
 function SingIn() {
+  const navigate = useNavigate();
+  const enterClick = () => navigate('/home')
   return (
     <div>
       <div className="container">
@@ -17,7 +19,7 @@ function SingIn() {
             <span>Password</span>
           </div>
 
-          <button className="enter">Enter</button>
+          <button onClick={enterClick} className="enter">Enter</button>
         </div>
       </div>
     </div>

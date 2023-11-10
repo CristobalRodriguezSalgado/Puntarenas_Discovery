@@ -1,5 +1,5 @@
 import SingIn from './pages/SingIn/SingIn';
-import Home from './pages/home/Home';
+import Home from './pages/Home/Home';
 import { createBrowserRouter ,RouterProvider } from 'react-router-dom';
 import './App.css';
 import SingUp from './pages/SingUp/SingUp';
@@ -11,7 +11,7 @@ function App() {
   const router = createBrowserRouter([
 
     {
-      path:"/users/sign_in",
+      path:"/",
       element:<SingIn></SingIn>
     },
 
@@ -21,7 +21,7 @@ function App() {
     },
 
     {
-      path:"/users/sign_up",
+      path:"/sing_up",
       element:<SingUp></SingUp>
     },
 
